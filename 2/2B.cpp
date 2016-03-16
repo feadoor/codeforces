@@ -233,15 +233,15 @@ string best_path2()
 }
 
 /*******************************************************************************
-* Finds the best path through the matrix to minimise the power of 2 in the     *
+* Finds the best path through the matrix to minimise the power of 5 in the     *
 * product of the numbers on the path, where zero is viewed as having a single  *
-* power of 2 dividing it.                                                      *
+* power of 5 dividing it.                                                      *
 *******************************************************************************/
 string best_path5()
 {
     string path = "";
 
-    // If there are no zeroes in the matrix, or if we can avoid powers of 2
+    // If there are no zeroes in the matrix, or if we can avoid powers of 5
     // completely, then just take the actual best path. Use the dynamic
     // programming array to build up the path from end to beginning.
     if (!zero || (best_power5[n-1][n-1] == 0))
@@ -293,7 +293,7 @@ string best_path5()
 }
 
 /*******************************************************************************
-* Finds the minimum possible number of trailing \eroes at the end of the       *
+* Finds the minimum possible number of trailing zeroes at the end of the       *
 * product of a path through the matrix                                         *
 *******************************************************************************/
 ll best_zeroes()
